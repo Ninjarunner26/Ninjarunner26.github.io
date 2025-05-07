@@ -1,3 +1,61 @@
+:root {
+    font-size: 18pt;
+}
 body {
-font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    background: #fff;
+    color: #fff;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.display-font {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-style: normal;
+}
+h1 {
+    font-size: 15rem;
+}
+.banner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(-45deg, #4d3291, #008dff, #4befe3);
+    background-size: 300% 300%;
+    animation: gradient 15s ease infinite;
+    height: 100svh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+nav {
+    width: 100%;
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-link {
+    font-size: 5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hover-shadow:hover {
+    text-shadow: 0 0 2rem #f100ff;
 }
