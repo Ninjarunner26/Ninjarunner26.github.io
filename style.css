@@ -76,9 +76,15 @@ nav {
         font-size: 5rem;
         margin: 10%;
     }
+    .nav-link {
+        font-size: 3rem;
+    }
 }
 @media screen and (min-width: 992px) {
     h1 {
         font-size: 12rem;
+    }
+    .nav-link {
+        font-size: 7rem;
     }
 }
