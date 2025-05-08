@@ -16,7 +16,6 @@ ul {
     font-style: normal;
 }
 h1 {
-    margin-top: 60%;
     font-size: 2.75rem;
 }
 .banner {
@@ -27,6 +26,7 @@ h1 {
     background-size: 450% 450%;
     animation: gradient 15s ease infinite;
     height: 100svh;
+    justify-content: space-around;
 }
 
 @keyframes gradient {
@@ -73,18 +73,17 @@ nav {
 
 @media screen and (min-width: 768px) {
     h1 {
-        font-size: 5rem;
-        margin: 10%;
+        font-size: 5.5rem;
     }
     .nav-link {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1700px) {
     h1 {
         font-size: 12rem;
     }
     .nav-link {
-        font-size: 7rem;
+        font-size: 6rem;
     }
 }
