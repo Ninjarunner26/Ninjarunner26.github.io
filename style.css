@@ -4,7 +4,9 @@
 body {
     margin: 0;
     font-family: "Noto Sans", sans-serif;
-    background: #fff;
+    background-image: linear-gradient(-45deg, #26cb9d, #006aff, #6427bc);
+    background-size: 300% 300%;
+    animation: gradient 15s ease infinite;
     color: #fff;
 }
 ul {
@@ -23,9 +25,6 @@ h1 {
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(-45deg, #4d3291, #008dff, #4befe3);
-    background-size: 450% 450%;
-    animation: gradient 15s ease infinite;
     height: 100svh;
     justify-content: space-around;
 }
@@ -49,7 +48,12 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.col {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .nav-link {
@@ -74,7 +78,7 @@ nav {
 
 @media screen and (min-width: 768px) {
     h1 {
-        font-size: 5.5rem;
+        font-size: 5rem;
     }
     .nav-link {
         font-size: 4rem;
@@ -82,9 +86,12 @@ nav {
 }
 @media screen and (min-width: 1700px) {
     h1 {
-        font-size: 12rem;
+        font-size: 11rem;
     }
     .nav-link {
-        font-size: 6rem;
+        font-size: 5rem;
     }
+}
+.scrolltext {
+    margin: 0;
 }
