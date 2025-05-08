@@ -23,7 +23,7 @@ h1 {
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(-45deg, #4d3291, #008dff, #4befe3);
-    background-size: 300% 300%;
+    background-size: 450% 450%;
     animation: gradient 15s ease infinite;
     height: 100svh;
 }
@@ -57,5 +57,15 @@ nav {
 }
 
 .hover-shadow:hover {
-    text-shadow: 0 0 2rem #f100ff;
+    text-shadow: 0 0 3rem #f100ff;
+    animation: shadow-grow 0.2s ease;
+}
+
+@keyframes shadow-grow {
+    0% {
+        text-shadow: 0 0 0rem #f100ff;
+    }
+    100% {
+        text-shadow: 0 0 3rem #f100ff;
+    }
 }
