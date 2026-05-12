@@ -40,7 +40,6 @@ h1 {
         background-position: 0% 0%;
     }
 }
-
 nav {
     width: 100%;
 }
@@ -61,12 +60,13 @@ nav {
     color: #fff;
     text-decoration: none;
 }
-
+.scrolltext {
+    margin: 0;
+}
 .hover-shadow:hover {
     text-shadow: 0 0 3rem #f100ff;
     animation: shadow-grow 0.2s ease;
 }
-
 @keyframes shadow-grow {
     0% {
         text-shadow: 0 0 0rem #f100ff;
@@ -91,7 +91,4 @@ nav {
     .nav-link {
         font-size: 5rem;
     }
-}
-.scrolltext {
-    margin: 0;
 }
